@@ -71,14 +71,13 @@ function removeFromCart(item) {
   // write your code here
   var tempCart = [...cart];
   var notFound = "That item is not in your cart.";
-  var itemFound = false;
 
   for(var i = 0; i < tempCart.length; i++)
   {
 
     if(tempCart[i].itemName === item)
     {
-      tempCart.splice(i, 1);
+      cart.splice(i, 1);
       return tempCart;
     }
   }
