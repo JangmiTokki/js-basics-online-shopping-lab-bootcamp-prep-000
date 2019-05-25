@@ -69,24 +69,25 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var tempCart = [...cart];
   var notFound = "That item is not in your cart.";
 
-  for(var i = 0; i < cart.length; i++)
+  for(var i = 0; i < tempCart.length; i++)
   {
 
     if(tempCart[i].itemName === item)
     {
       cart.splice(i, 1);
-      return cart;
+      return tempCart;
     }
   }
   
-  if(cart[item] !== item)
+  if(tempCart[item] !== item)
   {
     return notFound;
   }
 
-    return cart;
+    return tempCart;
 
 }
 
