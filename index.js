@@ -83,7 +83,7 @@ function removeFromCart(item) {
     }
   }
   
-  if(temp[item] !== item)
+  if(tempCart[item] !== item)
   {
     return notFound;
   }
