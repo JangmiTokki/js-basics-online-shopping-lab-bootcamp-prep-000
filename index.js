@@ -87,7 +87,7 @@ function removeFromCart(item) {
     return notFound;
   }
 
-    return tempCart;
+    //return tempCart;
 
 }
 
