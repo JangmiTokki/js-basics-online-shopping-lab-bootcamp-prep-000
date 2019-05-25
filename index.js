@@ -71,6 +71,7 @@ function removeFromCart(item) {
   // write your code here
   var tempCart = [...cart];
   var notFound = "That item is not in your cart.";
+  var itemFound = false;
 
   for(var i = 0; i < tempCart.length; i++)
   {
@@ -82,7 +83,7 @@ function removeFromCart(item) {
     }
   }
   
-  if(tempCart[item] !== item)
+  if(itemFound)
   {
     return notFound;
   }
