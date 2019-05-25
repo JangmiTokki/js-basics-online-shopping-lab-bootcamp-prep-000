@@ -69,10 +69,9 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var tempCart = [...cart];
   var notFound = "That item is not in your cart.";
 
-  for(var i = 0; i < tempCart.length; i++)
+  for(var i = 0; i < cart.length; i++)
   {
 
     if(tempCart[i].itemName === item)
@@ -82,12 +81,12 @@ function removeFromCart(item) {
     }
   }
   
-  if(tempCart[item] !== item)
+  if(cart[item] !== item)
   {
     return notFound;
   }
 
-    return tempCart;
+    return cart;
 
 }
 
