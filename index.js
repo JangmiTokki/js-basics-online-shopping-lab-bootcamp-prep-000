@@ -75,7 +75,7 @@ function removeFromCart(item) {
   for(var i = 0; i < tempCart.length; i++)
   {
 
-    if(Object.hasOwnProperty())
+    if(Object.hasOwnProperty(item))
     {
       tempCart.splice(i, 1);
       return tempCart;
