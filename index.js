@@ -75,7 +75,7 @@ function removeFromCart(item) {
   for(var i = 0; i < tempCart.length; i++)
   {
 
-    if(item === Object.key(tempCart[i].itemName))
+    if(item === Object.keys(tempCart[i].itemName))
     {
       tempCart.splice(i, 1);
       return tempCart;
